@@ -7,6 +7,6 @@ Tensor Flow demo for Harvard Machine Learning Supergroup
 
 # Demo 2
 Demo problem with solving 
-$$u^{(2,0,0)}(t,x,y)-\nabla _{\{x,y\}}^{}u(t,x,y)=0$$
+$u^{(2,0,0)}(t,x,y)-\nabla _{\{x,y\}}^{}u(t,x,y)=0$
 
 # Demo 3
