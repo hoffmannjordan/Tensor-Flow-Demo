@@ -1,7 +1,7 @@
 # Tensor-Flow-Demo
-Tensor Flow demo for Harvard Machine Learning Supergroup
+Tensor Flow demo for Harvard Machine Learning Supergroup.
 
-## Written by Jordan Hoffmann and Shruti Mishra
+Code written by Jordan Hoffmann and Shruti Mishra
 
 # Demo 1
 
@@ -16,3 +16,5 @@ and:
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{(1,0,0)}(0,x,y)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{(1,0,0)}(0,x,y)=0" title="u^{(1,0,0)}(0,x,y)=0" /></a>. We solve it on an irregular geomtry. We then try to predict the total amplitude within a small region of the solution domain some time later.
 
 # Demo 3
+Demo problem recoloring an image given colored images. Use the left lavalamp from this video for trianing:
+https://www.youtube.com/watch?v=rSzjFvMFQhg
