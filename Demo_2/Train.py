@@ -3,7 +3,7 @@ from input_batch_generator import *
 from nn_input import *
 
 def train_model():
-    files_to_use = range(68)
+    files_to_use = range(1,900)
 
     print "Number of solutions with training data: {}".format(len(files_to_use))
 

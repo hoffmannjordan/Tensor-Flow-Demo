@@ -19,16 +19,24 @@ class BatchGenerator(keras.utils.Sequence):
     def __getitem__(self, index):
         """Generate one batch of data"""
         batch_keys = [self.id[ID_] for ID_ in self.indexes[index*self.batch_size:(index+1)*self.batch_size]]
-
+        # print 'batch_keys'
+        # print batch_keys
         X_main = None
         X_side = None
         Y = None
+
+        # (sol_X_main, sol_X_side ), sol_Y = nn_input(1)
+
+        # X_main = np.zeros((len(batch_keys), sol_X_main.shape[0], sol_X_main.shape[1], sol_X_main.shape[2]))
+        # X_side = np.zeros((len(batch_keys), len(sol_X_side)))
+        # Y = np.zeros(len(batch_keys))
         
+
         for index, key in enumerate(batch_keys):
-            print batch_keys
+            
             if index == 0:
                 (sol_X_main, sol_X_side ), sol_Y = nn_input(key)
-
+                
                 X_main = np.zeros((len(batch_keys), sol_X_main.shape[0], sol_X_main.shape[1], sol_X_main.shape[2]))
                 X_side = np.zeros((len(batch_keys), len(sol_X_side)))
                 Y = np.zeros(len(batch_keys))

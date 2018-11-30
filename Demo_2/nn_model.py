@@ -10,12 +10,15 @@ def nn_model(input_shape):
     print 'Defining NN model'
     conv_kernel = (3, 3)
     conv_channels = 16
+    conv_channels2 = 32
     pool_size = (2, 2)
     n_hidden = 100
 
     # Main input 
     main_input = Input(shape=input_shape[0])
     x = Conv2D(conv_channels, conv_kernel, activation="relu")(main_input)
+    x = MaxPooling2D(pool_size=pool_size)(x)
+    x = Conv2D(conv_channels2, conv_kernel, activation="relu")(x)
     x = MaxPooling2D(pool_size=pool_size)(x)
     x = Flatten()(x)
 
