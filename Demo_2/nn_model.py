@@ -2,9 +2,12 @@ import keras
 from keras import Model
 from keras.layers import Input, Dropout, Flatten, Dense, Conv2D, MaxPooling2D
 from keras.layers.merge import concatenate
+from input_batch_generator import *
 
+from __init__ import *
 
 def nn_model(input_shape):
+    print 'Defining NN model'
     conv_kernel = (3, 3)
     conv_channels = 16
     pool_size = (2, 2)
@@ -31,16 +34,15 @@ def nn_model(input_shape):
 
 
 class NeuralNet:
-
-    def __init__(self, solution_keys, epochs=10):
-
-        training_data_lookup =
-
-        self.nn_model = nn_model(((window_size[0], window_size[1], NUMBER_OF_FEATURE_GRIDS), NUMBER_OF_SIDE_FEATURES))
-        self.batch_generator = BatchGenerator(solution_keys)
+    def __init__(self, IDS, epochs=10):
+        # training_data_lookup =
+        window_size = (81,81)
+        self.nn_model = nn_model(((window_size[0], window_size[1], FEATURES), SIDE_FEATURES))
+        self.batch_generator = BatchGenerator(IDS)
         self.epochs = epochs
 
     def train(self):
+        print 'Starting training'
         optimizer = keras.optimizers.RMSprop(lr=0.0005)
 
 
@@ -50,4 +52,7 @@ class NeuralNet:
 
         self.nn_model.fit_generator(self.batch_generator,
                                     epochs=self.epochs)
+
+
+
 

@@ -1,14 +1,14 @@
 import keras
 import numpy as np
-
+from nn_input import *
+from __init__ import *
 
 class BatchGenerator(keras.utils.Sequence):
     def __init__(self, id,  batch_size=32, shuffle=True):
         """Initialization"""
         self.id = id
         self.batch_size = batch_size
-
-
+        self.shuffle = shuffle
         self.indexes = np.arange(len(self.id))
         self.on_epoch_end()
 
@@ -23,9 +23,11 @@ class BatchGenerator(keras.utils.Sequence):
         X_main = None
         X_side = None
         Y = None
+        
         for index, key in enumerate(batch_keys):
+            print batch_keys
             if index == 0:
-                (sol_X_main, sol_X_side ), sol_Y = generate_nn_input(key)
+                (sol_X_main, sol_X_side ), sol_Y = nn_input(key)
 
                 X_main = np.zeros((len(batch_keys), sol_X_main.shape[0], sol_X_main.shape[1], sol_X_main.shape[2]))
                 X_side = np.zeros((len(batch_keys), len(sol_X_side)))
@@ -36,7 +38,7 @@ class BatchGenerator(keras.utils.Sequence):
                 Y[index] = sol_Y
 
             else:
-                (X_main[index], X_side[index]), Y[index] = generate_nn_input(key)
+                (X_main[index], X_side[index]), Y[index] = nn_input(key)
 
         X_main = X_main.astype(np.float32)
         X_side = X_side.astype(np.float32)
@@ -47,6 +49,6 @@ class BatchGenerator(keras.utils.Sequence):
     def on_epoch_end(self):
         """Updates indexes after each epoch"""
         if self.shuffle:
-            self.indexes = np.random.permutation(np.arange(len(self.keys)))
+            self.indexes = np.random.permutation(np.arange(len(self.id)))
 
 

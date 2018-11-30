@@ -23,7 +23,7 @@ def nn_input(id):
 		X_main[:,:,i] += mats[i]
 	Y  = np.genfromtxt('Sol_'+str(id)+'.csv',delimiter=',') 
 	#print Y
-    return [X_main, X_side], Y
+	return [X_main, X_side], Y
 
 
 # if __name__ == '__main__':
