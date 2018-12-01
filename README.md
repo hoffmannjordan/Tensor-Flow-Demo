@@ -18,6 +18,11 @@ and:
 Here is an example of a solution at t=6.
 ![Setup](../master/ims/setup.png)
 
+Here, the goal is to given the solution at t=6, the location of the original pulse, and it's amplitude, say something about the result at t=6.28. How different do they look? Below, we plot the solution at two times.
+![Compare](../master/ims/diff.png)
+
+Not totally the same! In this demo, we train a neural network to make predictions. Here, I tried to use a more typical coding style like that in a large project. 
+
 # Demo 3
 Demo problem recoloring an image given colored images. Use the left lavalamp from this video for trianing:
 https://www.youtube.com/watch?v=rSzjFvMFQhg
