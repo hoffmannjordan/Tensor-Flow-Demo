@@ -1,5 +1,5 @@
-# Tensor Flow Demo for Mathematicians and Physicists
-Tensor Flow demo for Harvard Machine Learning Supergroup. The goal is to get you up and running with rather bare-bones code for three different tasks.
+# TensorFlow Demo for Mathematicians and Physicists
+TensorFlow demo for Harvard Machine Learning Supergroup. The goal is to get you up and running with rather bare-bones code for three different tasks.
 
 Code written by Jordan Hoffmann and Shruti Mishra
 
