@@ -22,7 +22,12 @@ Here, the goal is to given the solution at t=6, the location of the original pul
 ![Compare](../master/ims/diff.png)
 
 Not totally the same! In this demo, we train a neural network to make predictions. Here, I tried to use a more typical coding style like that in a large project. 
+To try to quantify some aspect, here we try to predict the summed amplitude in the lower right quadrant in the second image. Training the network on 5000 examples, a small sample of which are in data_small.zip, we get the results below:
+![run0](../master/ims/res0.png)
 
 # Demo 3
 Demo problem recoloring an image given colored images. Use the left lava lamp from this video for training:
 https://www.youtube.com/watch?v=rSzjFvMFQhg
+Can we take an image like that on the left, separate the two lava lamps, and then accurately recolor one of them, fed a video of the other side? 
+![Setup](../master/ims/Lava_Lamp_Setup.png)
+To do this, we try using a network that uses conv2d and conv2d_transpose layers. 
