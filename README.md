@@ -6,7 +6,7 @@ Code written by Jordan Hoffmann and Shruti Mishra
 # Demo 1
 
 # Demo 2
-Here, I wanted to cook up a slightly more complicated example that uses a side stream in addition to the typical input. Therefore, in this
+Here, I wanted to cook up a slightly more complicated example that uses a **side stream** in addition to the typical input. Therefore, in this
 demo we will be doing a PDE related problem. We are solving:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{(2,0,0)}(t,x,y)-\nabla&space;_{\{x,y\}}^{}u(t,x,y)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{(2,0,0)}(t,x,y)-\nabla&space;_{\{x,y\}}^{}u(t,x,y)=0" title="u^{(2,0,0)}(t,x,y)-\nabla _{\{x,y\}}^{}u(t,x,y)=0" /></a>
@@ -33,7 +33,9 @@ Demo problem recoloring an image given colored images. Use the left lava lamp fr
 https://www.youtube.com/watch?v=rSzjFvMFQhg
 Can we take an image like that on the left, separate the two lava lamps, and then accurately recolor one of them, fed a video of the other side? 
 ![Setup](../master/ims/Lava_Lamp_Setup.png)
-To do this, we try using a network that uses conv2d and conv2d_transpose layers. 
+To do this, we try using a network that uses `conv2d` and `conv2d_transpose` layers. In the figure below, we show the input (gray scale), the result from early in training, somewhere near the middle of training, and the end of training. At the bottom, we show the target image. 
+![Prediction over Time](../master/ims/PredT.png)
+
 
 # Supplementary Information 
 ## Resources
