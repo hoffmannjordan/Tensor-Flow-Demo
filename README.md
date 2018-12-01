@@ -35,6 +35,7 @@ Can we take an image like that on the left, separate the two lava lamps, and the
 To do this, we try using a network that uses conv2d and conv2d_transpose layers. 
 
 # Supplementary Information 
-Resources
+## Resources
+
 https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture
 https://www.tensorflow.org/tutorials/
