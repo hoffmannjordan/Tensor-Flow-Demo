@@ -1,5 +1,5 @@
-# Tensor-Flow-Demo
-Tensor Flow demo for Harvard Machine Learning Supergroup.
+# Tensor Flow Demo for Mathematicians and Physicist 
+Tensor Flow demo for Harvard Machine Learning Supergroup. The goal is to get you up and running with rather bare-bones code for three different tasks.
 
 Code written by Jordan Hoffmann and Shruti Mishra
 
