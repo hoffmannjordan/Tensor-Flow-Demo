@@ -33,3 +33,8 @@ https://www.youtube.com/watch?v=rSzjFvMFQhg
 Can we take an image like that on the left, separate the two lava lamps, and then accurately recolor one of them, fed a video of the other side? 
 ![Setup](../master/ims/Lava_Lamp_Setup.png)
 To do this, we try using a network that uses conv2d and conv2d_transpose layers. 
+
+# Supplementary Information 
+Resources
+https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture
+https://www.tensorflow.org/tutorials/
