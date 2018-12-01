@@ -15,6 +15,9 @@ Subject to:
 and:
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{(1,0,0)}(0,x,y)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{(1,0,0)}(0,x,y)=0" title="u^{(1,0,0)}(0,x,y)=0" /></a>. We solve it on an irregular geomtry. We then try to predict the total amplitude within a small region of the solution domain some time later.
 
+Here is an example of a solution at t=6.
+![Setup](../master/ims/setup.png)
+
 # Demo 3
 Demo problem recoloring an image given colored images. Use the left lavalamp from this video for trianing:
 https://www.youtube.com/watch?v=rSzjFvMFQhg
