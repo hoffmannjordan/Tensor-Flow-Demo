@@ -1,4 +1,4 @@
-# Tensor Flow Demo for Mathematicians and Physicist 
+# Tensor Flow Demo for Mathematicians and Physicists
 Tensor Flow demo for Harvard Machine Learning Supergroup. The goal is to get you up and running with rather bare-bones code for three different tasks.
 
 Code written by Jordan Hoffmann and Shruti Mishra
@@ -6,7 +6,8 @@ Code written by Jordan Hoffmann and Shruti Mishra
 # Demo 1
 
 # Demo 2
-Demo problem with solving:
+Here, I wanted to cook up a slightly more complicated example that uses a side stream in addition to the typical input. Therefore, in this
+demo we will be doing a PDE related problem. We are solving:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=u^{(2,0,0)}(t,x,y)-\nabla&space;_{\{x,y\}}^{}u(t,x,y)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{(2,0,0)}(t,x,y)-\nabla&space;_{\{x,y\}}^{}u(t,x,y)=0" title="u^{(2,0,0)}(t,x,y)-\nabla _{\{x,y\}}^{}u(t,x,y)=0" /></a>
 
