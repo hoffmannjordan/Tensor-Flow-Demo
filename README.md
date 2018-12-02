@@ -36,6 +36,7 @@ Can we take an image like that on the left, separate the two lava lamps, and the
 To do this, we try using a network that uses `conv2d` and `conv2d_transpose` layers. In the figure below, we show the input (gray scale), the result from early in training, somewhere near the middle of training, and the end of training. At the bottom, we show the target image. 
 ![Prediction over Time](../master/ims/PredT.png)
 
+<iframe width="854" height="480" src="https://www.youtube.com/embed/9HE61S2OagU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Supplementary Information 
 ## Resources
