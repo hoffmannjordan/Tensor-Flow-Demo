@@ -34,7 +34,7 @@ To try to quantify some aspect, here we try to predict the summed amplitude in t
 # Demo 3
 Demo problem recoloring an image given colored images. Use the left lava lamp from this video for training:
 https://www.youtube.com/watch?v=rSzjFvMFQhg
-Can we take an image like that on the left, separate the two lava lamps, and then accurately recolor one of them, fed a video of the other side? 
+Can we take an image like that on the left, separate the two lava lamps, and then accurately recolor one of them, fed a video of the other side? **Note:** I ended up taking the one on the right for training. 
 ![Setup](../master/ims/Lava_Lamp_Setup.png)
 To do this, we try using a network that uses `conv2d` and `conv2d_transpose` layers. In the figure below, we show the input (gray scale), the result from early in training, somewhere near the middle of training, and the end of training. At the bottom, we show the target image. 
 ![Prediction over Time](../master/ims/PredT.png)
