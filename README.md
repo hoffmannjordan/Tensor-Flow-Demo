@@ -14,7 +14,8 @@ demo we will be doing a PDE related problem. We are solving:
 Subject to:
 <a href="https://www.codecogs.com/eqnedit.php?latex=u(0,x,y)=e^{Z&space;\left(-\left((x-X)^2&plus;(y-Y)^2\right)\right)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u(0,x,y)=e^{Z&space;\left(-\left((x-X)^2&plus;(y-Y)^2\right)\right)}" title="u(0,x,y)=e^{Z \left(-\left((x-X)^2+(y-Y)^2\right)\right)}" /></a>
 and:
-<a href="https://www.codecogs.com/eqnedit.php?latex=u^{(1,0,0)}(0,x,y)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{(1,0,0)}(0,x,y)=0" title="u^{(1,0,0)}(0,x,y)=0" /></a>. We solve it on an irregular geometry. We then try to predict the total amplitude within a small region of the solution domain some time later.
+<a href="https://www.codecogs.com/eqnedit.php?latex=u^{(1,0,0)}(0,x,y)=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?u^{(1,0,0)}(0,x,y)=0" title="u^{(1,0,0)}(0,x,y)=0" /></a>. We solve it on an irregular geometry. We then try to predict the total amplitude within a small region of the solution domain some time later. That is, we randomly set X,Y, and Z for each run. However, we store these values and pass them along as a side stream for the network.
+
 Here is a plot of the solution over time, always with the same color bar:
 ![Grid](../master/ims/grid.png)
 
@@ -36,6 +37,8 @@ Can we take an image like that on the left, separate the two lava lamps, and the
 To do this, we try using a network that uses `conv2d` and `conv2d_transpose` layers. In the figure below, we show the input (gray scale), the result from early in training, somewhere near the middle of training, and the end of training. At the bottom, we show the target image. 
 ![Prediction over Time](../master/ims/PredT.png)
 
+## Video
+Click on the below image to be redirected to a youtube video.
 [![Video](https://img.youtube.com/vi/9HE61S2OagU/0.jpg)](https://www.youtube.com/watch?v=9HE61S2OagU)
 
 # Supplementary Information 
