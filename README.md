@@ -47,5 +47,7 @@ Click on the below image to be redirected to a youtube video.
 ## Resources
 
 https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture
+
 https://www.tensorflow.org/tutorials/
+
 https://www.tensorflow.org/tutorials/keras/basic_classification
