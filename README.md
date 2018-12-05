@@ -1,7 +1,7 @@
 # TensorFlow Demo for Mathematicians and Physicists
 TensorFlow demo for Harvard Machine Learning Supergroup. The goal is to get you up and running with rather bare-bones code for three different tasks.
 
-Code written by Jordan Hoffmann and Shruti Mishra
+Code written by Jordan Hoffmann (mainly Demo 2 + 3, flat-folding code for Demo 1) and Shruti Mishra (Demo 1)
 
 # Demo 1
 Given a sheet that has been folded, can a computer tell how many times it has been folded? It is relatively straightforward for small crease numbers, but as the number increases, the specific locations of the creases can greatly impact the amount of mileage that is present. Below, we show an image that shows a few examples of creased sheets at different fold numbers.
