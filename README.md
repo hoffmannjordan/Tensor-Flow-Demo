@@ -4,7 +4,7 @@ TensorFlow demo for Harvard Machine Learning Supergroup. The goal is to get you 
 Code written by Jordan Hoffmann (mainly Demo 2 + 3, flat-folding code for Demo 1) and Shruti Mishra (Demo 1)
 
 # Demo 1
-Given a sheet that has been folded, can a computer tell how many times it has been folded? It is relatively straightforward for small crease numbers, but as the number increases, the specific locations of the creases can greatly impact the amount of mileage that is present. Below, we show an image that shows a few examples of creased sheets at different fold numbers.
+Given a sheet that has been folded, can a computer tell how many times it has been folded? It is relatively straightforward for small crease numbers (code [here](https://github.com/hoffmannjordan/Crumpling)), but as the number increases, the specific locations of the creases can greatly impact the amount of mileage that is present. Below, we show an image that shows a few examples of creased sheets at different fold numbers.
 ![Demo_1](../master/ims/PredN.png)
 
 # Demo 2
